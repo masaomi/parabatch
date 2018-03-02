@@ -1,4 +1,4 @@
-# parabatch
+# Parabatch
 
 A Ruby script to run a simple batch shell script in parallel on a local computer.
 
@@ -10,12 +10,12 @@ Usage:
  ruby parabatch.rb [batch.sh] [threads] ([out.dat]) 2> err.log 
 ```
 
-# Requirements (gem)
+# Requirements (gem)
 
 * parallel 
 * ruby-progressbar
 
-# Exmaple
+# Exmaple
 
 ```
 $ ruby parabatch.rb sample_batch.sh 1
