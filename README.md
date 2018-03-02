@@ -1,6 +1,6 @@
 # Parabatch
 
-A Ruby script to run a simple batch shell script in parallel on a local computer.
+A Ruby script to run a simple batch shell script in parallel on a local computer. In the shell script, one line should be corresponding to one independent job.
 
 # Usage
 
