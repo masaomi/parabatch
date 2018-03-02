@@ -5,7 +5,7 @@ require 'parallel'
 require 'ruby-progressbar'
 
 unless batch_file=ARGV[0] and threads=ARGV[1]
-  puts "Usage:\n ruby #{__FILE__} [batch.sh] [threads] ([out.dat]) 2> err.log"
+  puts "Usage:\n ruby #{File.basename(__FILE__)} [batch.sh] [threads] ([out.dat]) 2> err.log"
   exit
 end
 threads = threads.to_i
