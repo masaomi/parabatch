@@ -12,7 +12,7 @@ threads = threads.to_i
 out_file = ARGV[2]||"out.dat"
 
 commands = File.readlines(batch_file).to_a.select{|line| !line.chomp.empty?}
-progress = ProgressBar.create(:title => "Progress", :total => commands.length, :format => '%a %B %p%% %t')
+progress = ProgressBar.create(title: "Progress", total: commands.length, format: '%a %B %p%% %t')
 result = Parallel.map(commands, in_threads: threads, finish: -> (item, i, res){ progress.increment }) do |command|
   `#{command}`
 end
